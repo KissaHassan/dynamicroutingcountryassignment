@@ -1,7 +1,9 @@
-import Image from "next/image";
-import styles from"./page.module.css";
+// import Image from "next/image";
+// import styles from"./page.module.css";
 import Link from "next/link";
-<link rel="stylesheet" href="style.css"></link>
+{/* <link rel="stylesheet" href="style.css"></link> */}
+import "./country/[country_name]/style.css";
+
     
 export default function Home() {
   return (

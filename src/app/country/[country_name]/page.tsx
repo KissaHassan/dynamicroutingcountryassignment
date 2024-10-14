@@ -1,9 +1,10 @@
-import { link } from "fs";
-import css from "styled-jsx/css";
-<link rel="stylesheet" href="style.css"></link>
+// import { link } from "fs";
+// import css from "styled-jsx/css";
+{/* <link rel="stylesheet" href="style.css"></link> */}
+import "./style.css";
 
 
-export default function country_name({ params }: any) {
+export default function country_name({ params }: {params:{country_name:string}}) {
     const countries: {
         name: string;
         population: number;
@@ -45,7 +46,7 @@ export default function country_name({ params }: any) {
         return countries.find(country=> country.name.toLowerCase() == country_url.toLowerCase());
 
     }
-    let result = findCountry(params.country_name);
+    const result = findCountry(params.country_name);
 
 
 
